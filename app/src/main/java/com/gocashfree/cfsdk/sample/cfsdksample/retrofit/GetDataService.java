@@ -12,7 +12,7 @@ import retrofit2.http.POST;
 
 public interface GetDataService {
 
-@POST("/mobile/pg/CashfreeToken")
+@POST("/CashfreeToken")
 Call<PaymentRes> getpaytoken(@HeaderMap HashMap<String,String>hashMap, @Body PaymentReq call_backreq);
 
 }
